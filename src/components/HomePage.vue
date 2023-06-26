@@ -15,7 +15,11 @@
         </div>
         <div>
             <p class="villa">Villa G is located in Eldoret, and is seated along the Nairobi highway just 200m away. The villa offers an exceptional view from the house, however, it is facing the North side of the site while the street is on the South.</p>
-            <div class="orange"></div>
+            <div class="orange">
+              <img src="../assets/sitting.jpg" alt="sitting">
+              <img src="../assets/kitchen.jpg" alt="kitchen">
+              <img src="../assets/back.jpg" alt="back">
+            </div>
         </div>
     </div>
 </template>
@@ -116,5 +120,11 @@ export default{
     top: 90%;
     position: absolute;
     left: 10%;
+  }
+  .orange img{
+    height: 85%;
+    margin: 5px;
+    width: 180px;
+    margin-top: 13px;
   }
 </style>
