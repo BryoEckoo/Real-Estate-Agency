@@ -1,6 +1,6 @@
 
 <template>
-    <div class="nav center left vvvv">
+    <div class="nav center left vvvv" :class="{ 'fixed-nav': isFixedNav }">
         <img src="../assets/logo.png" alt="logo" />
         <div>
             <ul>
@@ -14,7 +14,23 @@
 
 <script>
 export default{
-    name:'HeaderPage'
+    name:'HeaderPage',
+    data() {
+    return {
+      isFixedNav: false,
+    };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.isFixedNav = window.pageYOffset > 200;
+    },
+  },
 }
 
 </script>
@@ -27,12 +43,15 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 96%;
     display: flex;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    transition: top 0.3s;
     align-items: center;
     height: 100px;
     margin: 0;
-    
 }
 .center {
     text-align: center;
@@ -56,6 +75,10 @@ li{
 }
 .nav div{
     margin-left: auto;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
 }
 
 </style>
