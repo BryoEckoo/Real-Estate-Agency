@@ -5,6 +5,8 @@
         <div>
             <ul>
                 <li>HOME</li>
+                <li>RENT</li>
+                <li>BUY</li>
                 <li>ABOUT</li>
                 <li>CONTACT</li>
             </ul>
