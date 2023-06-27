@@ -36,9 +36,10 @@
       </div>
       <p class="details">DETAILS</p>
     </div>
-    <div >
+    <div style="position: relative;">
       <p style="font-size: 200px;">ON SALE</p>
-      <div class="sympdiv" style="background-color: black;">
+      <div class="greenr"></div>
+      <div class="sympdiv" style="background-color: black; height: 600px; position: relative;">
         <img class="symplogo" src="../assets/symplogo.png" alt="symlogo">
         <p style="color: gold; font-family: 'Fasthand', cursive; font-size: 50px; position: absolute; left: 10px;top: 110px;">A different tone</p>
         <p style="color: gold; font-family: 'Mulish', sans-serif; font-size: 40px; position: absolute;top: 20px;left: 30%;">A Rare <br>      Blend Of Luxury And <br>Innovation</p>
@@ -48,7 +49,7 @@
         <p class="explorebtn">EXPLORE</p>
       </div>
       <div class="explorediv" style="background-color:  rgb(50, 158, 201);">
-        <p>EXPLORE MORE</p>
+        <p style="font-family: 'Mulish', sans-serif;font-size: 30px;">EXPLORE MORE</p>
         <div class="apartments">
           <p>Apartments</p>
           <img src="../assets/appartment.jpg" alt="">
@@ -61,8 +62,10 @@
           <p>Offices</p>
           <img src="../assets/office.jpg" alt="">
         </div>
-        <p>BUY</p>
-        <p>RENT</p>
+        <div class="br">
+          <p class="b">BUY</p>
+          <p class="r">RENT</p>
+        </div>
       </div>
       <div class="more">
         <p>WHY US?</p>
@@ -338,5 +341,71 @@ export default{
     bottom: 20px;
     width: 20%;
     height: 40%;
+  }
+  .explorediv{
+    position: relative;
+    width: 70%;
+    height: 600px;
+    box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .apartments{
+    position:absolute;
+    left: 5%;
+    
+  }
+  .apartments img{
+      width: 270px;
+      height: 200px;
+      box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+    .apartments p{
+      font-family: 'Roboto Slab', serif;
+      text-decoration: underline;
+    } 
+  .houses{
+    position:absolute;
+    left: 55%;
+  }
+  .houses p{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+  }
+  .houses img{
+      width: 270px;
+      height: 200px;
+      box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+  .offices{
+    position:absolute;
+    left: 110%;
+  }
+  .offices p{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+  }
+  .offices img{
+      width: 270px;
+      height: 200px;
+      box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+  .br{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    margin: 5px;
+  }
+  .br p{
+    font-family: 'Roboto Slab', serif;
+    margin-left: 50px;
+  }
+  .greenr{
+    background-color: #566b38;
+    height: 1000px;
+    right: 0%;
+    width: 800px;
+    position: absolute;
+    top: 280px;
+
   }
 </style>
