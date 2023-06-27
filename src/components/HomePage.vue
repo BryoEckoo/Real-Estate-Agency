@@ -40,23 +40,24 @@
       <p style="font-size: 200px;">ON SALE</p>
       <div class="sympdiv" style="background-color: black;">
         <img class="symplogo" src="../assets/symplogo.png" alt="symlogo">
-        <p>A different tone</p>
-        <p>A Rare Blend Of Luxury And Innovation</p>
-        <img class="sympbuild" src="../assets/symp.jpg" alt="symp">
+        <p style="color: gold; font-family: 'Fasthand', cursive; font-size: 50px; position: absolute; left: 10px;top: 110px;">A different tone</p>
+        <p style="color: gold; font-family: 'Mulish', sans-serif; font-size: 40px; position: absolute;top: 20px;left: 30%;">A Rare <br>      Blend Of Luxury And <br>Innovation</p>
+        <p style="color: white;position: absolute;font-family: 'Heebo', sans-serif;top: 50%;width: 450px;left: 30%;">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
+        <img class="sympbuild" src="../assets/highrise.png" alt="symp">
         <img class="symppool" src="../assets/symppool.jpg" alt="symppool">
-        <p class="explore">EXPLORE</p>
+        <p class="explorebtn">EXPLORE</p>
       </div>
-      <div style="background-color: aqua;">
+      <div class="explorediv" style="background-color:  rgb(50, 158, 201);">
         <p>EXPLORE MORE</p>
-        <div>
+        <div class="apartments">
           <p>Apartments</p>
           <img src="../assets/appartment.jpg" alt="">
         </div>
-        <div>
+        <div class="houses">
           <p>Houses</p>
           <img src="../assets/house.jpg" alt="">
         </div>
-        <div>
+        <div class="offices">
           <p>Offices</p>
           <img src="../assets/office.jpg" alt="">
         </div>
@@ -295,18 +296,19 @@ export default{
   .sympdiv{
     align-items: center;
   }
-  .explore{
-    border-color:gold;
+  .explorebtn{
     font-weight: bold;
     border :3px solid gold;
-    width:10%;
+    width:9%;
     color:gold;
     height: 20px;
-    border-left-width: 3px;
     border-radius: 7px;
     padding: 2px;
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
   }
-  .explore:hover{
+  .explorebtn:hover{
     border-color: black;
     background-color: gold;
     color: black;
@@ -314,18 +316,27 @@ export default{
   .sympdiv{
     width: 100%;
     height: 400px;
+    position: relative;
   }
   .symplogo{
-    widows: 100px;
-    height: 80px;
+    width: 140px;
+    height: 100px;
     margin-top: 50px;
-    left: 20px;
+    left: 70px;
     position: absolute;
   }
   .sympbuild{
-    width: 50%;
+    width: 20%;
     height: 40%;
     right: 20px;
+    top: 20px;
+    position:absolute;
+  }
+  .symppool{
     position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 20%;
+    height: 40%;
   }
 </style>
