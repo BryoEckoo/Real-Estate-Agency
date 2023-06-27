@@ -48,10 +48,18 @@
       </div>
       <div style="background-color: aqua;">
         <p>EXPLORE MORE</p>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <div>
+          <p>Apartments</p>
+          <img src="../assets/appartment.jpg" alt="">
+        </div>
+        <div>
+          <p>Houses</p>
+          <img src="../assets/house.jpg" alt="">
+        </div>
+        <div>
+          <p>Offices</p>
+          <img src="../assets/office.jpg" alt="">
+        </div>
         <p>BUY</p>
         <p>RENT</p>
       </div>
@@ -305,7 +313,6 @@ export default{
   }
   .sympdiv{
     width: 100%;
-    position: absolute;
     height: 400px;
   }
   .symplogo{
