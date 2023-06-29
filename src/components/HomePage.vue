@@ -52,7 +52,7 @@
       <div class="sympdiv" style="background-color: black; height: 600px; position: relative;">
         <img class="symplogo" src="../assets/symplogo.png" alt="symlogo">
         <p style="color: gold; font-family: 'Kaushan Script', cursive;, cursive; font-size: 50px; position: absolute; left: 10px;top: 240px;">A different tone</p>
-        <p style="color: gold; font-family: 'Mulish', sans-serif; font-size: 40px; position: absolute;top: 90px;left: 30%;">A Rare <br>      Blend Of Luxury And <br>Innovation</p>
+        <p style="color: gold; font-family: 'Mulish', sans-serif; font-size: 40px; position: absolute;top: 90px;left: 30%;">A Rare<br>Of Luxury And <br>Innovation</p>
         <p style="color: white;position: absolute;font-family: 'Heebo', sans-serif;top: 46%;width: 450px;left: 30%;">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
         <img class="sympbuild" src="../assets/highrise.png" alt="symp">
         <img class="symppool" src="../assets/symppool.jpg" alt="symppool">
@@ -92,7 +92,7 @@
           <p style="top: 35%; left: 10%;">Over 500 Clients and Two Delivered Projects.Three International Branches.</p>
         </div>
         <div class="transparent">
-          <i class="fa-sharp fa-light fa-ballot-check"></i>
+          <i class="fa-solid fa-check"></i>
           <h3 style="top: 65%; left: 10%;">TRANSPARENCY</h3>
           <p style="top: 70%;left: 10%;">Always Stay Informed About Your Investment and Your Properties.</p>
         </div>
@@ -521,7 +521,8 @@ export default{
     top: 39%;
     left: 37%;
   }
-  .more .transparent .fa-sharp{
+  .more .transparent .fa-solid{
+    font-size: 50px;
     top: 75%;
     left: -20%;
   }
