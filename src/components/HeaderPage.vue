@@ -25,13 +25,15 @@ export default{
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
   },
-  unmounted() {
+  beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     handleScroll() {
       this.isFixedNav = window.pageYOffset > 200;
     },
+
+
   },
 }
 
@@ -45,15 +47,16 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 96%;
+    width: 100%;
     display: flex;
-    z-index: 999;
+    z-index: 90;
     background-color: white;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
     transition: top 0.3s;
     align-items: center;
     height: 100px;
     margin: 0;
+    
 }
 .center {
     text-align: center;

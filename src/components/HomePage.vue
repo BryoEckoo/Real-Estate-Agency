@@ -31,6 +31,12 @@
         </div>
         <div class="yelloish"> 
         </div>
+        <div class="exp">
+          <div class="border">
+            <h4>Greenwich Mordern</h4>
+            <p>This magnificently designed tower offers views that redefine international luxury standards while challenging the underlying conventions of residential high-rise architecture. Located in the exciting high demand upper side of Westlands, Nairobi a walking distance to numerous social amenities such as 5 star hotels, shopping malls, recreational centers, schools, and many more, makes Elite Residence the ideal home for young families.</p>
+          </div>  
+        </div>
         <img class="greenimg" src="../assets/bedroom1.jpg" alt="interior2">
           <img class="yelloimg" src="../assets/untilted.jpg" alt="bedroom1">
       </div>
@@ -41,15 +47,15 @@
       <div class="greenr"></div>
       <div class="sympdiv" style="background-color: black; height: 600px; position: relative;">
         <img class="symplogo" src="../assets/symplogo.png" alt="symlogo">
-        <p style="color: gold; font-family: 'Fasthand', cursive; font-size: 50px; position: absolute; left: 10px;top: 110px;">A different tone</p>
-        <p style="color: gold; font-family: 'Mulish', sans-serif; font-size: 40px; position: absolute;top: 20px;left: 30%;">A Rare <br>      Blend Of Luxury And <br>Innovation</p>
-        <p style="color: white;position: absolute;font-family: 'Heebo', sans-serif;top: 50%;width: 450px;left: 30%;">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
+        <p style="color: gold; font-family: 'Kaushan Script', cursive;, cursive; font-size: 50px; position: absolute; left: 10px;top: 240px;">A different tone</p>
+        <p style="color: gold; font-family: 'Mulish', sans-serif; font-size: 40px; position: absolute;top: 90px;left: 30%;">A Rare <br>      Blend Of Luxury And <br>Innovation</p>
+        <p style="color: white;position: absolute;font-family: 'Heebo', sans-serif;top: 46%;width: 450px;left: 30%;">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
         <img class="sympbuild" src="../assets/highrise.png" alt="symp">
         <img class="symppool" src="../assets/symppool.jpg" alt="symppool">
         <p class="explorebtn">EXPLORE</p>
       </div>
       <div class="explorediv" style="background-color:  rgb(50, 158, 201);">
-        <p style="font-family: 'Mulish', sans-serif;font-size: 30px;">EXPLORE MORE</p>
+        <p style="font-family: 'Mulish', sans-serif;font-size: 30px;left: 50%;top: 0%;margin-bottom: 20px;">EXPLORE MORE</p>
         <div class="apartments">
           <p>Apartments</p>
           <img src="../assets/appartment.jpg" alt="">
@@ -68,30 +74,59 @@
         </div>
       </div>
       <div class="more">
-        <p>WHY US?</p>
-        <h3>WIDE RANGE OF PROPERTIES</h3>
-        <P>We Offer A Wide Variety of Property Investment Opportunities.</P>
-        <h3>TRUSTED BY HUNDREDS</h3>
-        <p>Over 500 Clients and Two Delivered Projects.Three International Branches.</p>
-        <h3>TRANSPARENCY</h3>
-        <p>Always Stay Informed About Your Investment and Your Properties.</p>
-        <h3>NEAR ME</h3>
-        <p>very Project is Carefully Hand-Picked to be Nearby Top Social Amenities and Prime Locations.</p>
+        <p style="font-size: 40px;top:0%; left: 45%;">WHY US?</p>
+        <div class="range">
+          <i class="fa-sharp fa-solid fa-city"></i>
+          <h3 style="left: 70%; top: 65%;">WIDE RANGE OF PROPERTIES</h3>
+          <P style="left: 70%;top: 70%;">We Offer A Wide Variety of Property Investment Opportunities.</P>
+        </div>
+        <div class="trust">
+          <i class="fa-solid fa-heart"></i>
+          <h3 style="top: 30%; left: 10%;">TRUSTED BY HUNDREDS</h3>
+          <p style="top: 35%; left: 10%;">Over 500 Clients and Two Delivered Projects.Three International Branches.</p>
+        </div>
+        <div class="transparent">
+          <i class="fa-sharp fa-light fa-ballot-check"></i>
+          <h3 style="top: 65%; left: 10%;">TRANSPARENCY</h3>
+          <p style="top: 70%;left: 10%;">Always Stay Informed About Your Investment and Your Properties.</p>
+        </div>
+        <div class="near">
+          <i class="fa-solid fa-building-columns"></i>
+          <h3 style="left: 70%;top: 30%;">NEAR ME</h3>
+          <p style="left: 70%;top: 35%;">very Project is Carefully Hand-Picked to be Nearby Top Social Amenities and Prime Locations.</p>
+        </div>
       </div>
       <div class="info">
-        <h4> ECKOO REAL ESTATE AGENCY</h4>
-        <p>Eldoret,Khetias</p>
-        <p>P.O.BOX 20227-00100</p>
-        <p>Eldoret Kenya</p>
-        <p>072200000</p>
-        <p>eckoo@gmail.com</p>
-        <h4>COMPANY</h4>
-        <p>ABOUT US</p>
-        <p>SERVICES</p>
-        <p>GET IN TOUCH</p>
-        <h4>EXPLORE</h4>
-        <P>FOR SALE</P>
-        <p>FOR RENT</p>
+        <div class="location">
+          <h4> ECKOO REAL ESTATE AGENCY</h4>
+          <p>Eldoret,Khetias</p>
+          <p>P.O.BOX 20227-00100</p>
+          <p>Eldoret Kenya</p>
+          <p>072200000</p>
+          <p>eckoo@gmail.com</p>
+        </div>
+        <div class="company">
+          <h4>COMPANY</h4>
+          <p>ABOUT US</p>
+          <p>SERVICES</p>
+          <p>GET IN TOUCH</p>
+        </div>
+        <div class="ex">
+          <h4>EXPLORE</h4>
+          <P>FOR SALE</P>
+          <p>FOR RENT</p>
+        </div>
+        <div class="social">
+          <ul>
+            <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-solid fa-phone"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-tiktok"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -245,6 +280,31 @@ export default{
   .rentals{
     font-size: 280px;
   }
+  .exp{
+    position: absolute;
+    transform: translate(40px, -670px);
+    background-color: white;
+    width: 360px;
+   
+    padding: 20px;
+  }
+  .exp .border{
+    border: 1.5px solid green;
+  }
+  .exp .border h4{
+    font-size: 28px;
+    padding-top: 1px;
+    color: rgb(126, 108, 7);
+    font-family: 'Caprasimo', cursive;
+  }
+  .exp .border p {
+    font-family: 'Roboto Slab', serif;
+    width: 260px;
+    padding-left: 10px;
+    margin-left: 30px;
+  
+    
+  }
   .rvilla{
     width: 100%;
     height: 520px;
@@ -322,15 +382,16 @@ export default{
     position: relative;
   }
   .symplogo{
-    width: 140px;
-    height: 100px;
+    top:90px;
+    width: 150px;
+    height: 120px;
     margin-top: 50px;
     left: 70px;
     position: absolute;
   }
   .sympbuild{
-    width: 20%;
-    height: 40%;
+    width: 30%;
+    height: 50%;
     right: 20px;
     top: 20px;
     position:absolute;
@@ -339,7 +400,7 @@ export default{
     position: absolute;
     right: 20px;
     bottom: 20px;
-    width: 20%;
+    width: 30%;
     height: 40%;
   }
   .explorediv{
@@ -348,19 +409,24 @@ export default{
     height: 600px;
     box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
   }
+  
   .apartments{
     position:absolute;
     left: 5%;
     
   }
   .apartments img{
-      width: 270px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+    .apartments img:hover{
+      cursor: pointer;
     }
     .apartments p{
       font-family: 'Roboto Slab', serif;
       text-decoration: underline;
+      font-size: 25px;
     } 
   .houses{
     position:absolute;
@@ -369,11 +435,15 @@ export default{
   .houses p{
     font-family: 'Roboto Slab', serif;
     text-decoration: underline;
+    font-size: 20px;
   }
   .houses img{
-      width: 270px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+    .houses img:hover{
+      cursor: pointer;
     }
   .offices{
     position:absolute;
@@ -382,11 +452,15 @@ export default{
   .offices p{
     font-family: 'Roboto Slab', serif;
     text-decoration: underline;
+    font-size: 20px;
   }
   .offices img{
-      width: 270px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+    .offices img:hover{
+      cursor: pointer;
     }
   .br{
     display: flex;
@@ -398,6 +472,10 @@ export default{
   .br p{
     font-family: 'Roboto Slab', serif;
     margin-left: 50px;
+    font-size: 23px;
+  }
+  .br p:hover{
+    cursor: pointer;
   }
   .greenr{
     background-color: #566b38;
@@ -407,5 +485,90 @@ export default{
     position: absolute;
     top: 280px;
 
+  }
+  .more{
+    background-color:yellow;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+  }
+  .more p, h3 {
+    font-family: 'Roboto Slab', serif;
+    position: absolute;
+    display: flex;
+    top: 20%;
+    font-size: 20px;
+  }
+  .more p{
+    width: 200px;
+    font-size: 20px;
+  }
+  .more i{
+    position: absolute;
+  }
+  .more .range .fa-sharp{
+    top: 75%;
+    left: 37%;
+  }
+  .more .near .fa-solid{
+    top: 39%;
+    left: 37%;
+  }
+  .more .transparent .fa-sharp{
+    top: 75%;
+    left: -20%;
+  }
+  .more .trust .fa-solid{
+    top: 39%;
+    left: -20%;
+  }
+  .info {
+    position: relative;
+    height: 500px;
+    color:rgb(196, 199, 39);
+  }
+  .info .location{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+  }
+  .info .company{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+  }
+  .info .ex{
+    position: absolute;
+    left: 80%;
+    top: 20%;
+  }
+  .fa ,.fa-brands ,.fa-solid{
+    position: absolute;
+    bottom: 10%;
+    font-size: 35px;
+    transform: translate(350px, -1px);
+  }
+  .social i:hover{
+    font-size: 45px;
+    cursor: pointer;
+  }
+  .fa-instagram{
+    left: 10%;
+  }
+  .fa-twitter{
+    left: 15%;
+  }
+  .fa-phone{
+    left: 20%;
+  }
+  .fa-linkedin{
+    left: 25%;
+  }
+  .fa-tiktok{
+    left: 30%;
+  }
+  .fa-youtube{
+    left: 35%;
   }
 </style>
