@@ -1,10 +1,10 @@
 
 <template>
-    <HeaderPage/>
+    
     <div>
         <div class="f">
             <div class="fdiv">
-                <p>REAL ESTATE AGENCY</p>
+                <p style="font-family: 'Libre Baskerville', serif;">ECKOO REAL ESTATE AGENCY</p>
                 <div>
                     <img class="fside" src="../assets/front.jpg" alt="front view">
                 </div>
@@ -26,7 +26,7 @@
       <p class="lm">LEARN MORE</p>
     </div>
     <div>
-      <p class="rentals">RENTALS</p>
+      <p class="rentals" style="font-family: 'Libre Baskerville', serif;">RENTALS</p>
       <div>
         <img class="rvilla" src="../assets/rental-villa.jpg" alt="rental1">
         <div class="green">  
@@ -47,13 +47,13 @@
       </div>
     </div>
     <div style="position: relative;">
-      <p style="font-size: 200px;">ON SALE</p>
+      <p style="font-size: 200px; font-family: 'Libre Baskerville', serif;">ON SALE</p>
       <div class="greenr"></div>
       <div class="sympdiv" style="background-color: black; height: 600px; position: relative;">
         <img class="symplogo" src="../assets/symplogo.png" alt="symlogo">
         <p style="color: gold; font-family: 'Kaushan Script', cursive;, cursive; font-size: 50px; position: absolute; left: 10px;top: 240px;">A different tone</p>
-        <p style="color: gold; font-family: 'Mulish', sans-serif; font-size: 40px; position: absolute;top: 90px;left: 30%;">A Rare<br>Of Luxury And <br>Innovation</p>
-        <p style="color: white;position: absolute;font-family: 'Heebo', sans-serif;top: 46%;width: 450px;left: 30%;">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
+        <p style="color: gold; font-family: 'Comfortaa', cursive; font-size: 40px; position: absolute;top: 130px;left: 30%;">A Rare<br>Blend of Luxury And <br>Innovation</p>
+        <p style="color: white;position: absolute;font-family: 'Heebo', sans-serif;top: 56%;width: 450px;left: 30%;">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
         <img class="sympbuild" src="../assets/highrise.png" alt="symp">
         <img class="symppool" src="../assets/symppool.jpg" alt="symppool">
         <div class="explore">
@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="explorediv" style="background-color:  rgb(50, 158, 201);">
-        <p style="font-family: 'Mulish', sans-serif;font-size: 30px;left: 50%;top: 0%;margin-bottom: 20px;">EXPLORE MORE</p>
+        <p style="font-family: 'Comfortaa', cursive;font-size: 30px;left: 50%;top: 5%;margin-bottom: 20px;">EXPLORE MORE</p>
         <div class="apartments">
           <p>Apartments</p>
           <img src="../assets/appartment.jpg" alt="">
@@ -75,7 +75,7 @@
           <img src="../assets/office.jpg" alt="">
         </div>
         <div class="br">
-          <p class="b">BUY</p>
+          <p class="b"><router-link to="/buy">BUY</router-link></p>
           <p class="r">RENT</p>
         </div>
       </div>
@@ -141,12 +141,12 @@
 
 <script>
 
-import HeaderPage from '../components/HeaderPage.vue'
+//import HeaderPage from '../components/HeaderPage.vue'
 
 export default{
     name:'HomePage',
     components:{
-        HeaderPage
+        //HeaderPage
     }
 }
 
@@ -192,8 +192,9 @@ export default{
   transform: translate(-50%, -50%);
   color: white;
   position: absolute;
-  top: 90%;
+  top: 87%;
   left: 80%;
+  font-family: 'Roboto Slab', serif;
 }
 
 /* Media Queries for responsive design */
@@ -271,12 +272,13 @@ export default{
   .learn .lm{
     margin-top: 6px;
     font-family: 'Caprasimo', cursive;
+    color: black;
   }
   .learn:hover{
     cursor: pointer;
   }
   .rentals{
-    font-size: 280px;
+    font-size: 250px;
   }
   .exp{
     position: absolute;
@@ -364,7 +366,6 @@ export default{
     position: relative;
     background-color: gold;
     transform: translate(550px, 550px);
-    
     width: 130px;
     height: 30px;
     border-radius: 19px;
@@ -372,6 +373,7 @@ export default{
   .explorebt{
     position: absolute;
     font-family: 'Caprasimo', cursive;
+    color: black;
     margin-top: 5px;
     margin-left: 24px;
   }
@@ -380,7 +382,9 @@ export default{
     background-color: black;
     border: gold solid 2px;
     color: gold;
-
+  }
+  .explore .explorebt:hover{
+    color: gold;
   }
   .sympdiv{
     width: 100%;
@@ -535,6 +539,9 @@ export default{
     height: 500px;
     color:rgb(196, 199, 39);
   }
+  .info p,h4{
+    font-family: 'Quicksand', sans-serif;
+  }
   .info .location{
     position: absolute;
     left: 5%;
@@ -560,6 +567,10 @@ export default{
     font-size: 45px;
     cursor: pointer;
   }
+  .social .fa-facebook-square{
+    left: 5%;
+  
+  }
   .fa-instagram{
     left: 10%;
   }
@@ -577,5 +588,8 @@ export default{
   }
   .fa-youtube{
     left: 35%;
+  }
+  .social ul{
+    list-style: none;
   }
 </style>
