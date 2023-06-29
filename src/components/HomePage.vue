@@ -22,7 +22,9 @@
             </div>
         </div>
     </div>
-    <p class="learn">LEARN MORE</p>
+    <div class="learn">
+      <p class="lm">LEARN MORE</p>
+    </div>
     <div>
       <p class="rentals">RENTALS</p>
       <div>
@@ -40,7 +42,9 @@
         <img class="greenimg" src="../assets/bedroom1.jpg" alt="interior2">
           <img class="yelloimg" src="../assets/untilted.jpg" alt="bedroom1">
       </div>
-      <p class="details">DETAILS</p>
+      <div class="detail">
+        <p class="det">DETAILS</p>
+      </div>
     </div>
     <div style="position: relative;">
       <p style="font-size: 200px;">ON SALE</p>
@@ -52,7 +56,9 @@
         <p style="color: white;position: absolute;font-family: 'Heebo', sans-serif;top: 46%;width: 450px;left: 30%;">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
         <img class="sympbuild" src="../assets/highrise.png" alt="symp">
         <img class="symppool" src="../assets/symppool.jpg" alt="symppool">
-        <p class="explorebtn">EXPLORE</p>
+        <div class="explore">
+          <p class="explorebt">EXPLORE</p>
+        </div>
       </div>
       <div class="explorediv" style="background-color:  rgb(50, 158, 201);">
         <p style="font-family: 'Mulish', sans-serif;font-size: 30px;left: 50%;top: 0%;margin-bottom: 20px;">EXPLORE MORE</p>
@@ -254,28 +260,20 @@ export default{
     box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
   }
   .learn{
-    background-color: yellow;
-    right: 20%;
-    position: absolute;
-    translate: inherit;
-    height: 37px;
-    margin: 18px;
-    top: 110%;
-    border: yellow;
-    border-radius: 6px;
-    align-content: center;
-    display: grid;
-    width: 127px;
-    font-family: unset;
-    border: 2px solid transparent;
-    transition: border-color 0.3s, border-width 0.3s; 
+    position: relative;
+    background-color: gold;
+    width: 150px;
+    height: 30px;
+    border: 2px black solid;
+    border-radius: 19px;
+    transform: translate(600px,100px);
+  }
+  .learn .lm{
+    margin-top: 6px;
+    font-family: 'Caprasimo', cursive;
   }
   .learn:hover{
-    background-color: black;
-    color: yellow;
-    border-color: yellow;
-    border-left-width: 30px;
-    border-width: 2.5px;
+    cursor: pointer;
   }
   .rentals{
     font-size: 280px;
@@ -337,21 +335,24 @@ export default{
     transform: translate(-100px, -500px);
     box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
   }
-  .details{
-    margin: 10px;
-    background-color:yellow;
-    width: 10%;
-    height: 40px;
-    border-radius: 8px;
-    transform: translate(600px, -300px);
+  .detail{
+    position: relative;
+    transform: translate(600px, -400px);
+    width: 100px;
+    height: 30px;
+    border-radius: 2px; 
+    border: 2px solid black;
+    background-color: gold;
+    border-radius: 19px;  
   }
-  .details:hover{
-    background-color: black;
-    color: yellow;
-    cursor: pointer;
-    border-color: yellow;
-    border-width: 5px;
-    border-left-width: 5px;
+  .detail .det{
+    font-family: 'Caprasimo', cursive;
+    margin-top: 6px;
+    align-content: center;
+    color: black;
+  }
+  .detail:hover{
+   cursor: pointer;
   }
   .info{
     background-color: #566b38;
@@ -359,22 +360,27 @@ export default{
   .sympdiv{
     align-items: center;
   }
-  .explorebtn{
-    font-weight: bold;
-    border :3px solid gold;
-    width:9%;
-    color:gold;
-    height: 20px;
-    border-radius: 7px;
-    padding: 2px;
-    position: absolute;
-    bottom: 20px;
-    left: 200px;
-  }
-  .explorebtn:hover{
-    border-color: black;
+  .explore{
+    position: relative;
     background-color: gold;
-    color: black;
+    transform: translate(550px, 550px);
+    
+    width: 130px;
+    height: 30px;
+    border-radius: 19px;
+  }
+  .explorebt{
+    position: absolute;
+    font-family: 'Caprasimo', cursive;
+    margin-top: 5px;
+    margin-left: 24px;
+  }
+  .explore:hover{
+    cursor: pointer;
+    background-color: black;
+    border: gold solid 2px;
+    color: gold;
+
   }
   .sympdiv{
     width: 100%;
