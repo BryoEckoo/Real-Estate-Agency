@@ -6,11 +6,12 @@
 
 //import HomePage from './components/HomePage.vue'
 import HomePage from './components/HomePage.vue'
-
+//import BuyPage from './components/BuyPage.vue'
 export default {
   name: 'App',
   components:{
     HomePage
+    //BuyPage
   }
  
 }

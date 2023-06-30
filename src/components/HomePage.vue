@@ -1,6 +1,6 @@
 
 <template>
-    
+    <HeaderPage />
     <div>
         <div class="f">
             <div class="fdiv">
@@ -75,8 +75,8 @@
           <img src="../assets/office.jpg" alt="">
         </div>
         <div class="br">
-          <p class="b"><router-link to="/buy">BUY</router-link></p>
-          <p class="r">RENT</p>
+          <button class="b" @click="openBuyPage">FOR SALE</button>
+          <button class="r" @click="openRentPage">FOR RENT</button>
         </div>
       </div>
       <div class="more">
@@ -141,12 +141,22 @@
 
 <script>
 
-//import HeaderPage from '../components/HeaderPage.vue'
+import HeaderPage from '../components/HeaderPage.vue'
+//import BuyPage from '../components/BuyPage.vue';
 
 export default{
     name:'HomePage',
     components:{
-        //HeaderPage
+        HeaderPage
+        //BuyPage
+    },
+    methods:{
+      openBuyPage(){
+        this.$router.push('/buy-page');
+      },
+      openRentPage(){
+        this.$router.push('/rent-page');
+      },
     }
 }
 
@@ -211,18 +221,18 @@ export default{
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .fside {
     width: 70%;
   }
   .orange img{
     height: 85%;
     margin: 5px;
-    width: 180px;
+    width: 10px;
     margin-top: 13px;
   }
   .orange {
-    width: 45%;
+    width: 50%;
     height: 155px;
     background-color: yellow;
     translate: inherit;
@@ -474,19 +484,29 @@ export default{
     }
   .br{
     display: flex;
-    position: absolute;
+    position: relative;
     left: 50%;
-    bottom: 0%;
+    top: 73%;
     margin: 5px;
   }
-  .br p{
+  .br button{
     font-family: 'Roboto Slab', serif;
     margin-left: 50px;
-    font-size: 23px;
+    font-size: 17px;
+    border: 1.5px solid black;
+    border-radius: 19px;
+    height: 30px;
+    background-color:skyblue ;
+    color:rgb(102, 102, 102);
+    width: 100px;
   }
-  .br p:hover{
+  .br button:hover{
     cursor: pointer;
+    background-color: rgb(102, 102, 102);
+    color: skyblue;
+    border: 1.5px solid white;
   }
+
   .greenr{
     background-color: #566b38;
     height: 1000px;
@@ -502,6 +522,7 @@ export default{
     width: 100%;
     height: 500px;
     margin-top: 20px;
+    
   }
   .more p, h3 {
     font-family: 'Roboto Slab', serif;
