@@ -1,16 +1,18 @@
 <template>
-  <HomePage />
+  <RentPage />
 </template>
 
 <script>
 
 //import HomePage from './components/HomePage.vue'
-import HomePage from './components/HomePage.vue'
+//import HomePage from './components/HomePage.vue'
 //import BuyPage from './components/BuyPage.vue'
+import RentPage from '../src/components/RentPage.vue'
 export default {
   name: 'App',
   components:{
-    HomePage
+    //HomePage,
+    RentPage
     //BuyPage
   }
  
