@@ -1,17 +1,16 @@
-import HomePage from "./components/HomePage.vue"
-import BuyPage from "./components/BuyPage.vue"
-import{ createRouter, createWebHistory } from "vue-router"
-import RentPage from "./components/RentPage.vue"
+import HomPage from './components/HomePage.vue'
+import RentPage from './components/RentPage.vue'
+import { createRouter,createWebHistory } from "vue-router"
+
 
 const routes=[
-    {path:'/', name:'HomePage', component:HomePage},
-    {path:'/buy-page', name:'BuyPage', component:BuyPage},
-    {path:'/rent-page', name:'RentPage', component:RentPage},
-];
+    {path:'/', component:HomPage},
+    {path:'/rent', component:RentPage},
+]
 
 const router=createRouter({
     history:createWebHistory(),
-    routes
+    routes,
 });
 
-export default router;
+export default router; 

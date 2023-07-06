@@ -2,13 +2,17 @@
 <template>
     <div class="nav center left vvvv" :class="{ 'fixed-nav': isFixedNav }">
         <img src="../assets/logo.png" alt="logo" />
-        <div>
-            <ul>
-                <li>HOME</li>
-                <li>RENT</li>
-                <li>BUY</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
+        <div class="nav-inf">
+            <ul class="ul">
+              <li class="home"><router-link class="r" to="/">HOME</router-link></li>
+              <li class="buy-rent"><router-link class="r" to="/">BUY/RENT</router-link> </li>
+              <div class="br-content">
+                <div class=" m apartment-br">APARTMENTS</div>
+                <div class="m houses-br">HOUSES</div>
+                <div class="m offices-br">OFFICES</div>
+              </div>
+              <li class="about"><router-link class="r" to="/">ABOUT</router-link> </li>
+              <li class="contact"><router-link class="r" to="/">CONTACT</router-link></li>
             </ul>
         </div>
     </div>
@@ -22,19 +26,7 @@ export default{
       isFixedNav: false,
     };
   },
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  beforeUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      this.isFixedNav = window.pageYOffset > 200;
-    },
-
-
-  },
+ 
 }
 
 </script>
@@ -68,13 +60,20 @@ img{
     width: 110px;
     height: 90px;
 }
-ul{
+.nav-inf ul{
     display: flex;
     text-align: right;
     text-decoration: none;
-    list-style: none;   
+    list-style: none;  
+    position: relative; 
 }
-li{
+.nav-inf .buy-rent .br-content{
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translate(10px, 100px);
+}
+.nav-inf ul li{
     font-size: 12px;
     padding: 3px;
 }
@@ -85,5 +84,24 @@ li{
   position: fixed;
   top: 0;
 }
+.r{
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+.br-content{
+  position: absolute;
+  background-color:white;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  opacity: 0;
+}
+.ul .br-content:hover{
+  opacity: 1;
+  cursor:pointer;
+}
+
 
 </style>

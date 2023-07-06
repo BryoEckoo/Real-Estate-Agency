@@ -1,17 +1,15 @@
 <template>
-    <HeaderPage />
+    <p>welcome to the rental page</p>
 </template>
 
 <script>
-import HeaderPage from "../components/HeaderPage"
 export default{
     name:'RentPage',
     components:{
-        HeaderPage
-    }
 
+    },
+    methods:{
+
+    }
 }
 </script>
-
-<style>
-</style>

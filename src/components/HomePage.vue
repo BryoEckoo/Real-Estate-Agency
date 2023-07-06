@@ -1,6 +1,6 @@
 
 <template>
-    <HeaderPage />
+  <HeaderPage />
     <div>
         <div class="f">
             <div class="fdiv">
@@ -75,7 +75,7 @@
           <img src="../assets/office.jpg" alt="">
         </div>
         <div class="br">
-          <button class="b" @click="openBuyPage">FOR SALE</button>
+          <button class="b"><router-link :to="'/rent'">FOR SALE</router-link></button>
           <button class="r" @click="openRentPage">FOR RENT</button>
         </div>
       </div>
@@ -142,12 +142,14 @@
 <script>
 
 import HeaderPage from '../components/HeaderPage.vue'
+//import { RouterLink } from 'vue-router';
+
 //import BuyPage from '../components/BuyPage.vue';
 
 export default{
     name:'HomePage',
     components:{
-        HeaderPage
+      HeaderPage
         //BuyPage
     },
     methods:{
@@ -155,7 +157,9 @@ export default{
         this.$router.push('/buy-page');
       },
       openRentPage(){
-        this.$router.push('/rent-page');
+        if (this.$router && this.$router.push) {
+        this.$router.push('/rent');
+      }
       },
     }
 }
@@ -442,6 +446,7 @@ export default{
     }
     .apartments img:hover{
       cursor: pointer;
+      filter: brightness(70%);
     }
     .apartments p{
       font-family: 'Roboto Slab', serif;
@@ -464,6 +469,7 @@ export default{
     }
     .houses img:hover{
       cursor: pointer;
+      filter: brightness(70%);
     }
   .offices{
     position:absolute;
@@ -481,6 +487,7 @@ export default{
     }
     .offices img:hover{
       cursor: pointer;
+      filter: brightness(70%);
     }
   .br{
     display: flex;
