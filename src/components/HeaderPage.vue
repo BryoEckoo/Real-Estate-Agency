@@ -7,9 +7,9 @@
               <li class="home"><router-link class="r" to="/">HOME</router-link></li>
               <li class="buy-rent"><router-link class="r" to="/">BUY/RENT</router-link> </li>
               <div class="br-content">
-                <div class=" m apartment-br">APARTMENTS</div>
-                <div class="m houses-br">HOUSES</div>
-                <div class="m offices-br">OFFICES</div>
+                <div class=" m apartment-br" style=" border-bottom: 1px solid black;"><p style="margin-right: 150px;">APARTMENTS</p></div>
+                <div class="m houses-br" style=" border-bottom: 1px solid black;"><p style="margin-right: 150px;">HOUSES</p></div>
+                <div class="m offices-br" style=" border-bottom: 1px solid black;"><p style="margin-right: 150px;">OFFICES</p></div>
               </div>
               <li class="about"><router-link class="r" to="/">ABOUT</router-link> </li>
               <li class="contact"><router-link class="r" to="/">CONTACT</router-link></li>
@@ -34,6 +34,7 @@ export default{
 <style>
 body{
     margin: 0px;
+    font-family: 'Roboto Slab', serif;
 }
 .nav{
     position: fixed;
@@ -49,6 +50,11 @@ body{
     height: 100px;
     margin: 0;
     
+}
+.ul .r{
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
 }
 .center {
     text-align: center;
@@ -66,16 +72,25 @@ img{
     text-decoration: none;
     list-style: none;  
     position: relative; 
+    right: 60%;
 }
 .nav-inf .buy-rent .br-content{
   position: absolute;
   display: block;
   top: 50%;
-  transform: translate(10px, 100px);
+  transform: translate(120px, 80px);
 }
 .nav-inf ul li{
-    font-size: 12px;
+    font-size: 15px;
     padding: 3px;
+    margin-left:80px;
+    
+}
+.br-content p{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: black;
 }
 .nav div{
     margin-left: auto;
@@ -84,12 +99,6 @@ img{
   position: fixed;
   top: 0;
 }
-.r{
-  display: inline-block;
-  margin-right: 10px;
-  color: #333;
-  text-decoration: none;
-}
 .br-content{
   position: absolute;
   background-color:white;
@@ -97,10 +106,15 @@ img{
   border-radius: .25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
   opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out;
+  transform:translate(175px,40px);
+  width: 170px;
+  top: 30px; 
+  left: -70px;
 }
-.ul .br-content:hover{
-  opacity: 1;
-  cursor:pointer;
+.nav-inf .ul>.buy-rent:hover + .br-content{
+  opacity:1;
 }
 
 

@@ -75,8 +75,8 @@
           <img src="../assets/office.jpg" alt="">
         </div>
         <div class="br">
-          <button class="b"><router-link :to="'/rent'">FOR SALE</router-link></button>
-          <button class="r" @click="openRentPage">FOR RENT</button>
+          <button class="b">FOR SALE</button>
+          <button class="r"><router-link class="r" :to="'/rent'">FOR RENT</router-link></button>
         </div>
       </div>
       <div class="more">
