@@ -166,7 +166,7 @@ export default{
 
 </script>
 
-<style>
+<style scoped>
 .f {
   height: 600px;
   width: 96%;

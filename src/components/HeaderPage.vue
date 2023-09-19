@@ -11,8 +11,8 @@
                 <div class="m houses-br" style=" border-bottom: 1px solid black;"><p style="margin-right: 150px;">HOUSES</p></div>
                 <div class="m offices-br" style=" border-bottom: 1px solid black;"><p style="margin-right: 150px;">OFFICES</p></div>
               </div>
-              <li class="about"><router-link class="r" to="/">ABOUT</router-link> </li>
-              <li class="contact"><router-link class="r" to="/">CONTACT</router-link></li>
+              <li class="about"><router-link class="r" to="/about">ABOUT</router-link> </li>
+              <li class="contact"><router-link class="r" to="/contact">CONTACT</router-link></li>
             </ul>
         </div>
     </div>
@@ -70,15 +70,14 @@ img{
     display: flex;
     text-align: right;
     text-decoration: none;
-    list-style: none;  
-    position: relative; 
+    list-style: none;   
     right: 60%;
 }
 .nav-inf .buy-rent .br-content{
   position: absolute;
   display: block;
   top: 50%;
-  transform: translate(120px, 80px);
+  transform: translate(291px, 21px);
 }
 .nav-inf ul li{
     font-size: 15px;
@@ -104,11 +103,11 @@ img{
   background-color:white;
   padding: .75rem;
   border-radius: .25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 150ms ease-in-out;
-  transform:translate(175px,40px);
+  transform:translate(270px,10px);
   width: 170px;
   top: 30px; 
   left: -70px;
