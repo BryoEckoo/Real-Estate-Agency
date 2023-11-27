@@ -1,7 +1,7 @@
 
 <template>
   <HeaderPage />
-    <div>
+    <!-- <div>
         <div class="f">
             <div class="fdiv">
                 <p style="font-family: 'Libre Baskerville', serif;">ECKOO REAL ESTATE AGENCY</p>
@@ -24,6 +24,27 @@
     </div>
     <div class="learn">
       <p class="lm">LEARN MORE</p>
+    </div> -->
+    <div class="villa-main">
+      <div class="blue-bg"></div>
+        <div class="villa-img">
+          <img src="../assets/front.jpg" alt="villa image" >
+        </div>
+        <div class="row details">
+          <div class="col-md-6 estate-det">
+            <h1>REAL<br> ESTATE<br> AGENCY</h1>
+          </div>
+          <div class="col-md-6 villa-det">
+            <p>Villa G is located in Eldoret, and is seated along the Nairobi highway just 200m away. The villa offers an exceptional view from the house, however, it is facing the North side of the site while the street is on the South.</p>
+          </div>
+        </div>
+        <div class="villa-interior">
+          <div class="row">
+            <div class="col-md-4"><img src="../assets/sitting.jpg" alt="sitting"></div>
+            <div class="col-md-4"><img src="../assets/kitchen.jpg" alt="kitchen"></div>
+            <div class="col-md-4"><img src="../assets/back.jpg" alt="back"></div>
+          </div>
+        </div>
     </div>
     <div>
       <p class="rentals" style="font-family: 'Libre Baskerville', serif;">RENTALS</p>
@@ -167,6 +188,82 @@ export default{
 </script>
 
 <style scoped>
+.villa-main{
+  position: relative;
+}
+.blue-bg{
+  background-color: rgb(50, 158, 201);
+  width: 80%;
+  height: 500px;
+  z-index: 0;
+}
+.villa-img img{
+  height: 500px;
+  width: 70%;
+  margin-top: 20px;
+  right: 5%;
+  z-index: 1;
+  position: absolute;
+  top: 5%;
+  box-shadow: 1px 3px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.details{
+  z-index: 2;
+  position: absolute;
+  top: 10%;
+}
+.details .estate-det h1{
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 70px;
+  text-align: left;
+  padding-left: 10px; 
+  color: white; 
+  font-family: 'Libre Baskerville', serif;
+}
+.details .villa-det{
+  width: 60%;
+  color: white;
+  bottom: 10%;
+  font-family: 'Roboto Slab', serif;
+}
+@media screen and (min-width: 992px) {
+  .details .villa-det{
+    margin-top:320px;
+    width: 40%;
+  }
+  .details .estate-det h1{
+    font-size: 60px;
+  }
+  .villa-interior{
+    left: 3%;
+  }
+  .villa-interior img{
+    margin: 5px;
+  }
+  
+}
+@media screen and (max-width: 992px){
+  .villa-interior{
+    margin-top: 50px;
+    width: 40%;
+  }
+  .villa-interior img{
+    margin-top: 10px;
+  }
+}
+.villa-interior{
+  background-color:yellow;
+  z-index: 2;
+  position: absolute;
+  top: 80%;
+}
+.villa-interior img{
+  width:140px;
+  height: 120px;
+
+}
 .f {
   height: 600px;
   width: 96%;
