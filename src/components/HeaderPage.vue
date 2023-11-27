@@ -1,21 +1,35 @@
 
 <template>
-    <div class="nav center left vvvv" :class="{ 'fixed-nav': isFixedNav }">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
         <img src="../assets/logo.png" alt="logo" />
-        <div class="nav-inf">
-            <ul class="ul">
-              <li class="home"><router-link class="r" to="/">HOME</router-link></li>
-              <li class="buy-rent"><router-link class="r" to="/">BUY/RENT</router-link> </li>
-              <div class="br-content">
-                <div class=" m apartment-br" style=" border-bottom: 1px solid black;"><p style="margin-right: 150px;">APARTMENTS</p></div>
-                <div class="m houses-br" style=" border-bottom: 1px solid black;"><p style="margin-right: 150px;">HOUSES</p></div>
-                <div class="m offices-br" style=" border-bottom: 1px solid black;"><p style="margin-right: 150px;">OFFICES</p></div>
-              </div>
-              <li class="about"><router-link class="r" to="/about">ABOUT</router-link> </li>
-              <li class="contact"><router-link class="r" to="/contact">CONTACT</router-link></li>
-            </ul>
+        <div class="nav-divider"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="home"><router-link class="r active nav-link" to="/">HOME</router-link></li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/about">ABOUT</router-link>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                BUY/RENT
+              </a>
+              <ul class="dropdown-menu">
+                <li><router-link class="dropdown-item" to="/">Apartments</router-link></li>
+                <li><router-link class="dropdown-item" to="/">Houses</router-link></li>
+                <li><router-link class="dropdown-item" to="/">Offices</router-link></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/contact">CONTACT</router-link>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </nav>
 </template>
 
 <script>
@@ -36,85 +50,13 @@ body{
     margin: 0px;
     font-family: 'Roboto Slab', serif;
 }
-.nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    z-index: 90;
-    background-color: white;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-    transition: top 0.3s;
-    align-items: center;
-    height: 100px;
-    margin: 0;
-    
-}
-.ul .r{
-  color: black;
-  font-family: 'Roboto Slab', serif;
-  font-weight: bold;
-}
-.center {
-    text-align: center;
-}
-.left {
-    text-align: left;
-}
 img{
     width: 110px;
     height: 90px;
 }
-.nav-inf ul{
-    display: flex;
-    text-align: right;
-    text-decoration: none;
-    list-style: none;   
-    right: 60%;
+@media screen and (min-width: 992px) {
+  .nav-divider{
+    width: 600px;
+  }
 }
-.nav-inf .buy-rent .br-content{
-  position: absolute;
-  display: block;
-  top: 50%;
-  transform: translate(291px, 21px);
-}
-.nav-inf ul li{
-    font-size: 15px;
-    padding: 3px;
-    margin-left:80px;
-    
-}
-.br-content p{
-  font-family: 'Roboto Slab', serif;
-  font-weight: bold;
-  font-size: 13px;
-  color: black;
-}
-.nav div{
-    margin-left: auto;
-}
-.fixed-nav {
-  position: fixed;
-  top: 0;
-}
-.br-content{
-  position: absolute;
-  background-color:white;
-  padding: .75rem;
-  border-radius: .25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 150ms ease-in-out;
-  transform:translate(270px,10px);
-  width: 170px;
-  top: 30px; 
-  left: -70px;
-}
-.nav-inf .ul>.buy-rent:hover + .br-content{
-  opacity:1;
-}
-
-
 </style>
