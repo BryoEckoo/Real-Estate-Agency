@@ -45,7 +45,10 @@
             <div class="col-md-4"><img src="../assets/back.jpg" alt="back"></div>
           </div>
         </div>
-    </div>
+      </div>
+      <div class="learn-btn learn">
+        <p class="lm">LEARN MORE</p>
+      </div>
     <div>
       <p class="rentals" style="font-family: 'Libre Baskerville', serif;">RENTALS</p>
       <div>
@@ -228,6 +231,17 @@ export default{
   bottom: 10%;
   font-family: 'Roboto Slab', serif;
 }
+.villa-interior{
+  background-color:gold;
+  z-index: 2;
+  position: absolute;
+  top: 80%;
+}
+.villa-interior img{
+  width:140px;
+  height: 120px;
+}
+/*active for large devices*/
 @media screen and (min-width: 992px) {
   .details .villa-det{
     margin-top:320px;
@@ -244,149 +258,32 @@ export default{
   }
   
 }
+/*active for small devices*/
 @media screen and (max-width: 992px){
   .villa-interior{
-    margin-top: 50px;
+    margin-top: 65px;
     width: 40%;
   }
   .villa-interior img{
     margin-top: 10px;
   }
 }
-.villa-interior{
-  background-color:yellow;
+.learn{
+  background-color: gold;
+  width: 150px;
+  height: 30px;
+  border: 2px;
+  border-radius: 19px;
+  left:50%;
+  top: 125%;
   z-index: 2;
   position: absolute;
-  top: 80%;
+  font-family: 'Caprasimo', cursive;
+  color: black;
 }
-.villa-interior img{
-  width:140px;
-  height: 120px;
-
-}
-.f {
-  height: 600px;
-  width: 96%;
-}
-
-.fdiv {
-  position: relative;
-  background-color: rgb(50, 158, 201);
-  height: 90%;
-  margin-top: 95px;
-  margin-right: 30px;
-  height: 540px;
-}
-
-.fdiv p {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 90px;
-  text-align: center;
-  padding: 10px;
-  width: 50px;
-  height: 50px;
-  margin-left: 70px;
-}
-
-.fside {
-  margin-top: 20px;
-  height: 560px;
-  width: 1100px;
-  margin-left: 50px;
-  margin-left: 100px;
-  box-shadow: 1px 3px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.villa {
-  transform: translate(-50%, -50%);
-  color: white;
-  position: absolute;
-  top: 87%;
-  left: 80%;
-  font-family: 'Roboto Slab', serif;
-}
-
-/* Media Queries for responsive design */
-@media (max-width: 1200px) {
-  .fside {
-    width: 90%;
-  }
-}
-
-@media (max-width: 1170px) {
-  .fside {
-    width: 80%;
-  }
-  
-}
-
-@media (max-width: 767px) {
-  .fside {
-    width: 70%;
-  }
-  .orange img{
-    height: 85%;
-    margin: 5px;
-    width: 10px;
-    margin-top: 13px;
-  }
-  .orange {
-    width: 50%;
-    height: 155px;
-    background-color: yellow;
-    translate: inherit;
-    top: 90%;
-    position: absolute;
-    left: 10%;
-  }
-}
-
-@media (max-width: 576px) {
-  .fdiv p {
-    font-size: 60px;
-  }
-  .villa {
-    font-size: 14px;
-    left: 50%;
-    top: 95%;
-    transform: translateX(-50%);
-  
-  } 
-}
-.orange {
-    width: 45%;
-    height: 155px;
-    background-color: yellow;
-    translate: inherit;
-    top: 90%;
-    position: absolute;
-    left: 10%;
-  }
-  .orange img{
-    height: 85%;
-    margin: 5px;
-    width: 180px;
-    margin-top: 13px;
-    box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
-  }
-  .learn{
-    position: relative;
-    background-color: gold;
-    width: 150px;
-    height: 30px;
-    border: 2px black solid;
-    border-radius: 19px;
-    transform: translate(600px,100px);
-  }
-  .learn .lm{
-    margin-top: 6px;
-    font-family: 'Caprasimo', cursive;
-    color: black;
-  }
   .learn:hover{
     cursor: pointer;
+    color: white;
   }
   .rentals{
     font-size: 250px;
