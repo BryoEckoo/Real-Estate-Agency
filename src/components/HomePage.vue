@@ -29,37 +29,25 @@
     <div class="greenwich">
       <p class="rentals-p" style="font-family: 'Libre Baskerville', serif;">RENTALS</p>
       <img class="rvilla" src="../assets/rental-villa.jpg" alt="rental1">
-      
-        <div class="green">
-          <div class="row">
-            <div class="col">
-              <div class="exp">
-                <div class="border">
-                  <h4>Greenwich Mordern</h4>
-                  <p>This magnificently designed tower offers views that redefine international luxury standards while challenging the underlying conventions of residential high-rise architecture. Located in the exciting high demand upper side of Westlands, Nairobi a walking distance to numerous social amenities such as 5 star hotels, shopping malls, recreational centers, schools, and many more, makes Elite Residence the ideal home for young families.</p>
-                </div>  
-              </div>
-            </div>
-            <div class="col green-img">
-              
-                <div><img class="greenimg" src="../assets/bedroom1.jpg" alt="interior2"></div>
-                <div><img class="yelloimg" src="../assets/untilted.jpg" alt="bedroom1"></div>
-               
+      <div class="green">
+        <div class="row">
+          <div class="col green-img">     
+              <div><img class="greenimg" src="../assets/bedroom1.jpg" alt="interior2"></div>
+              <div><img class="yelloimg" src="../assets/untilted.jpg" alt="bedroom1"></div>
+          </div>
+          <div class="col exp-div">
+            <div class="exp">
+              <div class="border">
+                <h4>Greenwich Mordern</h4>
+                <p>This magnificently designed tower offers views that redefine international luxury standards while challenging the underlying conventions of residential high-rise architecture. Located in the exciting high demand upper side of Westlands, Nairobi a walking distance to numerous social amenities such as 5 star hotels, shopping malls, recreational centers, schools, and many more, makes Elite Residence the ideal home for young families.</p>
+              </div>  
             </div>
           </div>
         </div>
-        <div class="brown"></div>
-      
-        <!-- <div class="green">  
-        </div>
-        <div class="yelloish"> 
-        </div> -->
         
-        <!-- <img class="greenimg" src="../assets/bedroom1.jpg" alt="interior2"> -->
-          
-      
+      </div>      
       <div class="detail">
-        <p class="det">DETAILS</p>
+        <p class="det">READ MORE</p>
       </div>
     </div>
     <div style="position: relative;">
@@ -260,6 +248,41 @@ export default{
   width: 100%;
   height: 520px;
 }
+.greenwich{
+  position: relative;
+}
+.exp{
+  background-color: white;
+  width: 70%;
+  padding: 10px;
+}
+.exp .border{
+  border: 1.5px solid green;
+}
+.exp .border h4{
+  padding-top: 1px;
+  color: rgb(126, 108, 7);
+  font-family: 'Caprasimo', cursive;
+}
+.exp .border p {
+  font-family: 'Roboto Slab', serif;    
+}
+.green{
+  background-color:	#566b38;
+  height: 780px;
+  width: 100%;
+  margin-top: 30px;
+}
+.green .green-img img{
+  width: 100%;
+  height: 70%;
+  margin: 12px;
+  box-shadow: 1px 3px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.exp-div{
+  margin-top: 50px;
+  margin-left: 70px;
+}
 
 /*active for large devices after 992px*/
 @media screen and (min-width: 992px) {
@@ -303,83 +326,41 @@ export default{
     width: 100%;
     height: 200px;
   }
+  .exp{
+    width: 100%;
+    font-size: 8px;
+  }
+.exp h4{
+  font-size:15px;
+}
+  .green .green-img img{
+    width: 100%;
+  }
+  .exp-div{
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 /*media small end*/
 
-  .exp{
-   
-    background-color: white;
-    width: 360px;
-    padding: 20px;
-  }
-  .exp .border{
-    border: 1.5px solid green;
-  }
-  .exp .border h4{
-    font-size: 28px;
-    padding-top: 1px;
-    color: rgb(126, 108, 7);
-    font-family: 'Caprasimo', cursive;
-  }
-  .exp .border p {
-    font-family: 'Roboto Slab', serif;
-    width: 260px;
-    padding-left: 10px;
-    margin-left: 30px;
-  
-    
-  }
-
-  .green{
-    background-color:	#566b38;
-    height: 700px;
-    width: 90%;
-    margin-top: 30px;
-  }
-  .green .green-img img{
-    width: 80%;
-    height: 50%;
-    margin: 5px;
-  }
-  /*.greenimg{
-    
-    right: 10%;
-    width:250px;
-    height: 250px;
-    margin-left: 300px;
-    margin-top: 50px;
-    box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
-    
-  }
-  .brown{
-    background-color: rgb(77, 77, 7);
-    height: 300px;
-    width: 30%;
-    right: 0%;
-  
-  }
-  .yelloimg{
-    width: 50%;
-    height: 70%;
-    box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
-  }*/
   .detail{
-    position: relative;
-    width: 100px;
+    position: absolute;
+    top: 86%;
+    left: 65%;
+    width: 140px;
     height: 30px;
-    border-radius: 2px; 
-    border: 2px solid black;
+    border: 2px;
     background-color: gold;
-    border-radius: 19px;  
+    border-radius: 10px; 
+    color: black; 
   }
   .detail .det{
     font-family: 'Caprasimo', cursive;
-    margin-top: 6px;
     align-content: center;
-    color: black;
   }
-  .detail:hover{
+  .detail :hover{
    cursor: pointer;
+   color: white;
   }
   .info{
     background-color: #566b38;
