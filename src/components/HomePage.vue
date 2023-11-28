@@ -334,11 +334,20 @@ export default{
   font-size:15px;
 }
   .green .green-img img{
-    width: 100%;
+    width: 130%;
+    box-shadow: none;
   }
   .exp-div{
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-right: 15px;
+  }
+  .greenwich .detail{
+    top: 94%;
+    left: 30%;
+  }
+  .green{
+    height: 420px;
   }
 }
 /*media small end*/
