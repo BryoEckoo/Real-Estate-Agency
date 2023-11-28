@@ -1,32 +1,8 @@
 
 <template>
   <HeaderPage />
-    <!-- <div>
-        <div class="f">
-            <div class="fdiv">
-                <p style="font-family: 'Libre Baskerville', serif;">ECKOO REAL ESTATE AGENCY</p>
-                <div>
-                    <img class="fside" src="../assets/front.jpg" alt="front view">
-                </div>
-                <div>
-                </div>
-                
-            </div>   
-        </div>
-        <div>
-            <p class="villa">Villa G is located in Eldoret, and is seated along the Nairobi highway just 200m away. The villa offers an exceptional view from the house, however, it is facing the North side of the site while the street is on the South.</p>
-            <div class="orange">
-              <img src="../assets/sitting.jpg" alt="sitting">
-              <img src="../assets/kitchen.jpg" alt="kitchen">
-              <img src="../assets/back.jpg" alt="back">
-            </div>
-        </div>
-    </div>
-    <div class="learn">
-      <p class="lm">LEARN MORE</p>
-    </div> -->
     <div class="villa-main">
-      <div class="blue-bg"></div>
+      <div class="blue-bg">
         <div class="villa-img">
           <img src="../assets/front.jpg" alt="villa image" >
         </div>
@@ -49,23 +25,39 @@
       <div class="learn-btn learn">
         <p class="lm">LEARN MORE</p>
       </div>
-    <div>
-      <p class="rentals" style="font-family: 'Libre Baskerville', serif;">RENTALS</p>
-      <div>
-        <img class="rvilla" src="../assets/rental-villa.jpg" alt="rental1">
-        <div class="green">  
+    </div>
+    <div class="greenwich">
+      <p class="rentals-p" style="font-family: 'Libre Baskerville', serif;">RENTALS</p>
+      <img class="rvilla" src="../assets/rental-villa.jpg" alt="rental1">
+      
+        <div class="green">
+          <div class="row">
+            <div class="col">
+              <div class="exp">
+                <div class="border">
+                  <h4>Greenwich Mordern</h4>
+                  <p>This magnificently designed tower offers views that redefine international luxury standards while challenging the underlying conventions of residential high-rise architecture. Located in the exciting high demand upper side of Westlands, Nairobi a walking distance to numerous social amenities such as 5 star hotels, shopping malls, recreational centers, schools, and many more, makes Elite Residence the ideal home for young families.</p>
+                </div>  
+              </div>
+            </div>
+            <div class="col green-img">
+              
+                <div><img class="greenimg" src="../assets/bedroom1.jpg" alt="interior2"></div>
+                <div><img class="yelloimg" src="../assets/untilted.jpg" alt="bedroom1"></div>
+               
+            </div>
+          </div>
+        </div>
+        <div class="brown"></div>
+      
+        <!-- <div class="green">  
         </div>
         <div class="yelloish"> 
-        </div>
-        <div class="exp">
-          <div class="border">
-            <h4>Greenwich Mordern</h4>
-            <p>This magnificently designed tower offers views that redefine international luxury standards while challenging the underlying conventions of residential high-rise architecture. Located in the exciting high demand upper side of Westlands, Nairobi a walking distance to numerous social amenities such as 5 star hotels, shopping malls, recreational centers, schools, and many more, makes Elite Residence the ideal home for young families.</p>
-          </div>  
-        </div>
-        <img class="greenimg" src="../assets/bedroom1.jpg" alt="interior2">
-          <img class="yelloimg" src="../assets/untilted.jpg" alt="bedroom1">
-      </div>
+        </div> -->
+        
+        <!-- <img class="greenimg" src="../assets/bedroom1.jpg" alt="interior2"> -->
+          
+      
       <div class="detail">
         <p class="det">DETAILS</p>
       </div>
@@ -241,7 +233,35 @@ export default{
   width:140px;
   height: 120px;
 }
-/*active for large devices*/
+.learn{
+  background-color: gold;
+  width: 150px;
+  height: 30px;
+  border: 2px;
+  border-radius: 19px;
+  left:50%;
+  top: 120%;
+  z-index: 2;
+  position: absolute;
+  font-family: 'Caprasimo', cursive;
+  color: black;
+}
+.learn:hover{
+  cursor: pointer;
+  color: white;
+}
+.greenwich{
+  margin-top:170px;
+}
+.rentals-p{
+  font-size: 200px;
+}
+.rvilla{
+  width: 100%;
+  height: 520px;
+}
+
+/*active for large devices after 992px*/
 @media screen and (min-width: 992px) {
   .details .villa-det{
     margin-top:320px;
@@ -258,7 +278,9 @@ export default{
   }
   
 }
-/*active for small devices*/
+/*media large end*/
+
+/*active for small devices starting 992px*/
 @media screen and (max-width: 992px){
   .villa-interior{
     margin-top: 65px;
@@ -267,33 +289,27 @@ export default{
   .villa-interior img{
     margin-top: 10px;
   }
-}
-.learn{
-  background-color: gold;
-  width: 150px;
-  height: 30px;
-  border: 2px;
-  border-radius: 19px;
-  left:50%;
-  top: 125%;
-  z-index: 2;
-  position: absolute;
-  font-family: 'Caprasimo', cursive;
-  color: black;
-}
-  .learn:hover{
-    cursor: pointer;
-    color: white;
+  .learn-btn.learn{
+    left: 30%;
+    top: 180%;
   }
-  .rentals{
-    font-size: 250px;
+  .greenwich{
+    margin-top: 490px;
   }
+  .rentals-p{
+    font-size: 74px;
+  }
+  .rvilla{
+    width: 100%;
+    height: 200px;
+  }
+}
+/*media small end*/
+
   .exp{
-    position: absolute;
-    transform: translate(40px, -670px);
+   
     background-color: white;
     width: 360px;
-   
     padding: 20px;
   }
   .exp .border{
@@ -313,41 +329,42 @@ export default{
   
     
   }
-  .rvilla{
-    width: 100%;
-    height: 520px;
-  }
+
   .green{
     background-color:	#566b38;
     height: 700px;
-    width: 70%;
+    width: 90%;
     margin-top: 30px;
   }
-  .greenimg{
+  .green .green-img img{
+    width: 80%;
+    height: 50%;
+    margin: 5px;
+  }
+  /*.greenimg{
+    
+    right: 10%;
     width:250px;
     height: 250px;
     margin-left: 300px;
     margin-top: 50px;
     box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
-    transform: translate(-100px, -400px);
+    
   }
-  .yelloish{
-    background-color: yellow;
+  .brown{
+    background-color: rgb(77, 77, 7);
     height: 300px;
     width: 30%;
     right: 0%;
-    margin-top: -600px;
-    position: absolute;
+  
   }
   .yelloimg{
     width: 50%;
     height: 70%;
-    transform: translate(-100px, -500px);
     box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, 0.2);
-  }
+  }*/
   .detail{
     position: relative;
-    transform: translate(600px, -400px);
     width: 100px;
     height: 30px;
     border-radius: 2px; 
