@@ -50,20 +50,30 @@
         <p class="det">READ MORE</p>
       </div>
     </div>
-    <div style="position: relative;">
-      <p style="font-size: 200px; font-family: 'Libre Baskerville', serif;">ON SALE</p>
+    <div class="symphony-p">
+      <p class="on-sale">ON SALE</p>
+    </div>
+    <div class="symphony on-sale">
       <div class="greenr"></div>
-      <div class="sympdiv" style="background-color: black; height: 600px; position: relative;">
-        <img class="symplogo" src="../assets/symplogo.png" alt="symlogo">
-        <p style="color: gold; font-family: 'Kaushan Script', cursive;, cursive; font-size: 50px; position: absolute; left: 10px;top: 240px;">A different tone</p>
-        <p style="color: gold; font-family: 'Comfortaa', cursive; font-size: 40px; position: absolute;top: 130px;left: 30%;">A Rare<br>Blend of Luxury And <br>Innovation</p>
-        <p style="color: white;position: absolute;font-family: 'Heebo', sans-serif;top: 56%;width: 450px;left: 30%;">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
-        <img class="sympbuild" src="../assets/highrise.png" alt="symp">
-        <img class="symppool" src="../assets/symppool.jpg" alt="symppool">
-        <div class="explore">
-          <p class="explorebt">EXPLORE</p>
+      <div class="div sympdiv" style="background-color: black; height: 600px; position: relative;">
+        <div class="col">
+          <div class="row">
+            <img class="symplogo" src="../assets/symplogo.png" alt="symlogo">
+            <p class="symp-p-1" style="">A different tone</p>
+          </div>
+          <div class="row">
+          <p class="symp-p-2">A Rare<br>Blend of Luxury And <br>Innovation</p>
+          <p class="symp-p-3">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
+          </div>
+          <div class="row">
+            <img class="sympbuild" src="../assets/highrise.png" alt="symp">
+            <img class="symppool" src="../assets/symppool.jpg" alt="symppool">
+          </div>
         </div>
+        <div class="explore"><p class="explorebt">READ MORE</p></div>
       </div>
+    </div>
+    <div style="position: relative;">
       <div class="explorediv" style="background-color:  rgb(50, 158, 201);">
         <p style="font-family: 'Comfortaa', cursive;font-size: 30px;left: 50%;top: 5%;margin-bottom: 20px;">EXPLORE MORE</p>
         <div class="apartments">
@@ -283,6 +293,44 @@ export default{
   margin-top: 50px;
   margin-left: 70px;
 }
+.symphony-p .on-sale{
+  font-size: 200px; 
+  font-family: 'Libre Baskerville', serif;
+}
+.greenr{
+  background-color: #566b38;
+  height: 1000px;
+  width: 800px;
+  right: 0%;
+  position: absolute;
+}
+.symplogo{
+  width: 150px;
+  height: 120px;
+}
+.symp-p-1{
+  color: gold; 
+  font-family: 'Kaushan Script', cursive; 
+  font-size: 50px;
+}
+.symp-p-2{
+  color: gold; 
+  font-family: 'Comfortaa', cursive; 
+  font-size: 40px; 
+}
+.symp-p-3{
+  color: white;
+  font-family: 'Heebo', sans-serif;
+}
+.sympbuild{
+  width: 30%;
+  height: 50%;
+}
+.symppool{
+  width: 30%;
+  height: 40%;
+}
+
 
 /*active for large devices after 992px*/
 @media screen and (min-width: 992px) {
@@ -333,22 +381,25 @@ export default{
 .exp h4{
   font-size:15px;
 }
-  .green .green-img img{
-    width: 130%;
-    box-shadow: none;
-  }
-  .exp-div{
-    margin-left: 0;
-    margin-top: 50px;
-    margin-right: 15px;
-  }
-  .greenwich .detail{
-    top: 94%;
-    left: 30%;
-  }
-  .green{
-    height: 420px;
-  }
+.green .green-img img{
+  width: 130%;
+  box-shadow: none;
+}
+.exp-div{
+  margin-left: 0;
+  margin-top: 50px;
+  margin-right: 15px;
+}
+.greenwich .detail{
+  top: 94%;
+  left: 30%;
+}
+.green{
+  height: 420px;
+}
+.symphony-p .on-sale{
+  font-size: 74px;
+}
 }
 /*media small end*/
 
@@ -404,30 +455,10 @@ export default{
   .sympdiv{
     width: 100%;
     height: 400px;
-    position: relative;
+    z-index: 1;
   }
-  .symplogo{
-    top:90px;
-    width: 150px;
-    height: 120px;
-    margin-top: 50px;
-    left: 70px;
-    position: absolute;
-  }
-  .sympbuild{
-    width: 30%;
-    height: 50%;
-    right: 20px;
-    top: 20px;
-    position:absolute;
-  }
-  .symppool{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    width: 30%;
-    height: 40%;
-  }
+  
+  
   .explorediv{
     position: relative;
     width: 70%;
@@ -515,15 +546,7 @@ export default{
     border: 1.5px solid white;
   }
 
-  .greenr{
-    background-color: #566b38;
-    height: 1000px;
-    right: 0%;
-    width: 800px;
-    position: absolute;
-    top: 280px;
-
-  }
+  
   .more{
     background-color:yellow;
     position: relative;
