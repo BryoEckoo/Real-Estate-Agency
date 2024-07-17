@@ -77,27 +77,29 @@ export default{
         <p class="det">READ MORE</p>
       </div>
     </div>
-    <div class="symphony-p">
-      <p class="on-sale">ON SALE</p>
-    </div>
-    <div class="symphony on-sale">
-      <div class="greenr"></div>
-      <div class="div sympdiv" style="background-color: black; height: 600px; position: relative;">
-        <div class="col">
-          <div class="row">
-            <img class="symplogo" src="../assets/symplogo.png" alt="symlogo">
-            <p class="symp-p-1" style="">A different tone</p>
+    <div class="symphony-main">
+      <div class="symphony-p">
+        <p class="on-sale">ON SALE</p>
+      </div>
+      <div class="symphony on-sale">
+        <div class="greenr"></div>
+        <div class="div sympdiv" style="background-color: black; height:100%; position: relative;">
+          <div class="col">
+            <div class="row">
+              <img class="symplogo" src="../assets/symplogo.png" alt="symlogo">
+              <p class="symp-p-1" style="">A different tone</p>
+            </div>
+            <div class="row">
+            <p class="symp-p-2">A Rare<br>Blend of Luxury And <br>Innovation</p>
+            <p class="symp-p-3">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
+            </div>
+            <div class="row symp-builds">
+              <img class="sympbuild" src="../assets/highrise.png" alt="symp">
+              <img class="symppool" src="../assets/symppool.jpg" alt="symppool">
+            </div>
           </div>
-          <div class="row">
-          <p class="symp-p-2">A Rare<br>Blend of Luxury And <br>Innovation</p>
-          <p class="symp-p-3">Just like music, Symphony Residence transcends time and emotions. The Studios, 1, 2 and 3 Bedroom Residence has a meticulous design to accommodate various housing and investment solutions, making the residence a private sanctuary for investors and homeowners. This composition of true luxury housing and high-end investment opportunity is truly music to everyone’s ears</p>
-          </div>
-          <div class="row">
-            <img class="sympbuild" src="../assets/highrise.png" alt="symp">
-            <img class="symppool" src="../assets/symppool.jpg" alt="symppool">
-          </div>
+          <div class="explore"><p class="explorebt">READ MORE</p></div>
         </div>
-        <div class="explore"><p class="explorebt">READ MORE</p></div>
       </div>
     </div>
     <div style="position: relative;">
@@ -281,14 +283,12 @@ export default{
 }
 .green{
   background-color:	#566b38;
-  height: 780px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .green .green-img img{
-  width: 100%;
-  height: 70%;
-  margin: 12px;
+  width: 70%;
+  margin: 5px;
   box-shadow: 1px 3px 4px 6px rgba(0, 0, 0, 0.2);
 }
 .exp-div{
@@ -306,10 +306,6 @@ export default{
   right: 0%;
   position: absolute;
 }
-.symplogo{
-  width: 150px;
-  height: 120px;
-}
 .symp-p-1{
   color: gold; 
   font-family: 'Kaushan Script', cursive; 
@@ -324,13 +320,17 @@ export default{
   color: white;
   font-family: 'Heebo', sans-serif;
 }
+.symp-builds{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  gap:200px;
+}
 .sympbuild{
-  width: 30%;
-  height: 50%;
+  width: 23%;
 }
 .symppool{
   width: 30%;
-  height: 40%;
 }
 
 
@@ -399,6 +399,7 @@ export default{
 .green{
   height: 420px;
 }
+
 .symphony-p .on-sale{
   font-size: 74px;
 }
@@ -459,8 +460,27 @@ export default{
     height: 400px;
     z-index: 1;
   }
+  .symplogo{
+    width:25%;
+    height:40%;
+    position:absolute;
+    padding:30px;
+    left:50px;
+  }
   
-  
+  .symp-p-1{
+    font-size:60px;
+    margin-top:30px;
+  }
+  .symp-p-2{
+    font-size:40px;
+    margin-top:30px;
+  }
+  .symp-p-3{
+    font-size:20px;
+    margin-bottom:40px;
+    margin-top:50px;
+  }
   .explorediv{
     position: relative;
     width: 70%;
