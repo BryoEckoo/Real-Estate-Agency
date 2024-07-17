@@ -434,7 +434,8 @@ export default{
   .explore{
     position: relative;
     background-color: gold;
-    transform: translate(550px, 550px);
+    padding-bottom:10px;
+    transform: translateX(750px);
     width: 130px;
     height: 30px;
     border-radius: 19px;
@@ -458,7 +459,6 @@ export default{
   .sympdiv{
     width: 100%;
     height: 400px;
-    z-index: 1;
   }
   .symplogo{
     width:25%;
