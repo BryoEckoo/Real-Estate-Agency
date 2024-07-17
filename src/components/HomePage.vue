@@ -1,4 +1,31 @@
 
+<script>
+
+import HeaderPage from '../components/HeaderPage.vue'
+//import { RouterLink } from 'vue-router';
+
+//import BuyPage from '../components/BuyPage.vue';
+
+export default{
+    name:'HomePage',
+    components:{
+      HeaderPage
+        //BuyPage
+    },
+    methods:{
+      openBuyPage(){
+        this.$router.push('/buy-page');
+      },
+      openRentPage(){
+        if (this.$router && this.$router.push) {
+        this.$router.push('/rent');
+      }
+      },
+    }
+}
+
+</script>
+
 <template>
   <HeaderPage />
     <div class="villa-main">
@@ -153,32 +180,7 @@
 
 </template>
 
-<script>
 
-import HeaderPage from '../components/HeaderPage.vue'
-//import { RouterLink } from 'vue-router';
-
-//import BuyPage from '../components/BuyPage.vue';
-
-export default{
-    name:'HomePage',
-    components:{
-      HeaderPage
-        //BuyPage
-    },
-    methods:{
-      openBuyPage(){
-        this.$router.push('/buy-page');
-      },
-      openRentPage(){
-        if (this.$router && this.$router.push) {
-        this.$router.push('/rent');
-      }
-      },
-    }
-}
-
-</script>
 
 <style scoped>
 .villa-main{

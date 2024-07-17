@@ -1,15 +1,15 @@
 <template>
-  <router-view />
+  <HomePage />
 </template>
 
 <script>
-//import HomePage from './components/HomePage.vue'
+import HomePage from './components/HomePage.vue'
 
 export default {
   name: 'App',
-  /*components: {
+  components: {
     HomePage,
-  }*/
+  }
 }
 </script>
 
@@ -20,9 +20,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
-}
-.r{
-  text-decoration: none;
+  margin-top: 60px;
 }
 </style>

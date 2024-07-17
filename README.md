@@ -1,4 +1,4 @@
-# test-pro
+# real-estate-agency
 
 ## Project setup
 ```
