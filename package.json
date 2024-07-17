@@ -1,6 +1,5 @@
 {
   "name": "real-estate-agency",
-  "main": "lib/functions/src/main.js",
   "version": "0.1.0",
   "private": true,
   "scripts": {
