@@ -1,5 +1,5 @@
 {
-  "name": "real-estate-agency",
+  "name": "test-pro",
   "version": "0.1.0",
   "main": "src/main.js",
   "private": true,
@@ -9,9 +9,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "core-js": "^3.8.3",
     "semver": "^7.6.3",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
